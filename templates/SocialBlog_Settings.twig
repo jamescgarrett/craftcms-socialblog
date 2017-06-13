@@ -1,0 +1,59 @@
+{#
+/**
+ * Social Blog plugin for Craft CMS
+ *
+ * Social Blog Settings.twig
+ *
+ * @author    James C Garrett
+ * @copyright Copyright (c) 2017 James C Garrett
+ * @link      http://jamescgarrett.com
+ * @package   SocialBlog
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% includeCssResource "socialblog/css/SocialBlog_Style.css" %}
+{% includeJsResource "socialblog/js/SocialBlog_Script.js" %}
+
+{{ forms.selectField({
+  label: "Channel To Populate",
+  instructions: "Choose the channel you would like to populate."|t,
+  required: true,
+  id: "channelToPopulate",
+  name: "channelToPopulate",
+  options: channels,
+  value: settings['channelToPopulate'] })
+}}
+
+<hr>
+
+{{ forms.textField({
+    label: 'Instagram User ID',
+    instructions: 'Enter your Instagram user id.',
+    id: 'instagramUserId',
+    name: 'instagramUserId', 
+    value: settings['instagramUserId'] })
+}}
+{{ forms.textField({
+    label: 'Instagram Client ID',
+    instructions: 'Enter your Instagram client id.',
+    id: 'instagramClientId',
+    name: 'instagramClientId', 
+    value: settings['instagramClientId'] })
+}}
+{{ forms.textField({
+    label: 'Instagram Client Secret',
+    instructions: 'Enter your Instagram client secret.',
+    id: 'instagramClientSecret',
+    name: 'instagramClientSecret', 
+    value: settings['instagramClientSecret'] })
+}}
+{{ forms.textField({
+    label: 'Instagram Access Token',
+    instructions: 'Enter your Instagram access token.',
+    id: 'instagramAccessToken',
+    name: 'instagramAccessToken', 
+    value: settings['instagramAccessToken'] })
+}}

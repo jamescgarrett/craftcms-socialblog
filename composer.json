@@ -1,0 +1,14 @@
+{
+	"name": "jamescgarrett/socialblog",
+	"description": "Create channel posts by pulling in social network posts.",
+	"type": "craft-plugin",
+	"authors": [
+		{
+			"name": "James C Garrett",
+			"homepage": "http://jamescgarrett.com"
+		}
+	],
+	"require": {
+		"composer/installers": "~1.0"
+	}
+}

@@ -1,0 +1,11 @@
+/**
+ * Social Blog plugin for Craft CMS
+ *
+ * Social Blog JS
+ *
+ * @author    James C Garrett
+ * @copyright Copyright (c) 2017 James C Garrett
+ * @link      http://jamescgarrett.com
+ * @package   SocialBlog
+ * @since     1.0.0
+ */
